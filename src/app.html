@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/main.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="header_container">
+            <header class="header">
+                <div class="header__logo">
+                    <a class="header__logoLink" href="#">
+                        <img src="./assets/image/3DHomeiSpace_logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__ul">
+                        <a href="#"><li class="header__btn" id="load">Load</li></a>
+                        <a href="#"><li class="header__btn" id="save">Save</li></a>
+                        <a href="#"><img class="header__links"  src="./assets/icons/logout_icon.svg" alt="logout"></a>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+            <nav class="toolbar">
+            <h1>Controls</h1>
+            <button id="addModelBtn">Add Model</button>
+            <button id="moveModelBtn">Move Model</button>
+            <button id="scaleModelBtn">Scale Model</button>
+            <button id="rotateModelBtn">Rotate Model</button>
+            <h3>Room Settings</h3>
+            <label for="roomWidth">Width:</label>
+            <input type="number" id="roomWidth" value="10" min="1" step="1">
+            <label for="roomHeight">Height:</label>
+            <input type="number" id="roomHeight" value="10" min="1" step="1">
+            <label for="roomDepth">Depth:</label>
+            <input type="number" id="roomDepth" value="10" min="1" step="1">
+            <label for="roomTexture">Texture:</label>
+            <input type="file" id="roomTexture">
+            <button id="createRoomBtn">Create Room</button>
+            <button id="updateRoomBtn">Update Room</button>
+            </nav>
+            <div class="viewport"id="viewport"></div>
+</body>
+</html>

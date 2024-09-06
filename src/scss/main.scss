@@ -1,0 +1,44 @@
+@use './abstracts/index.scss' as *;
+@use './componets/index.scss' as *;
+@use './layout/index.scss' as *;
+
+
+body{
+    font-size:  12px;
+    min-height: 90vh;
+}
+
+//tmp styles
+#sidebar {
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+#sidebar h2 {
+    margin-top: 0;
+}
+#sidebar button, #sidebar input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#sidebar button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#sidebar button:hover {
+    background-color: #005999;
+}
+#sidebar input[type="number"], #sidebar input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
